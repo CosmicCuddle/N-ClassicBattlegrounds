@@ -24,9 +24,9 @@ The addon changes **what is shown in the client only**. For actual server-enforc
 ## Installation
 
 1. **Back up** your existing `NaxxramasClassicBattlegrounds`, `N-ClassicBattlegrounds` or `NClassicBattlegrounds` folders in `Interface/AddOns`. Remove these existing versions after backing them up to avoid duplicate addons.
-2. Select **Code → Download ZIP** on this repository and extract it.
-3. Open the extracted **`N-ClassicBattlegrounds-main`** repository folder. **Inside it**, find the install-ready **`NClassicBattlegrounds`** folder.
-4. **Copy only that inner `NClassicBattlegrounds` folder** to `World of Warcraft/Interface/AddOns/`. Do not copy the outer repository folder.
+2. Download the **[v1.0.0 ready-to-install ZIP](https://github.com/CosmicCuddle/N-ClassicBattlegrounds/raw/refs/heads/main/dist/NClassicBattlegrounds-v1.0.0.zip)**.
+3. Extract the ZIP directly into `World of Warcraft/Interface/AddOns/`. It contains the correct `NClassicBattlegrounds/` folder already, so **no renaming is needed**.
+4. Do not extract the entire GitHub **Code → Download ZIP** repository archive as an addon; it includes an extra outer folder and the project documents.
 5. Check the final layout:
 
    ```text

@@ -23,11 +23,11 @@ The addon changes **what is shown in the client only**. For actual server-enforc
 
 ## Installation
 
-1. **Back up** your existing `NaxxramasClassicBattlegrounds` folder (and any previous `NClassicBattlegrounds` folder), then **remove the old `NaxxramasClassicBattlegrounds` folder from `Interface/AddOns`** so the two versions do not load simultaneously.
-2. On this repository, select **Code → Download ZIP** and extract it.
-3. Inside `World of Warcraft/Interface/AddOns/`, create a folder named **`NClassicBattlegrounds`**.
-4. Copy the `NClassicBattlegrounds.lua` and `NClassicBattlegrounds.toc` files from the extracted ZIP into that folder. The GitHub ZIP is now named `N-ClassicBattlegrounds-main`; install only the two addon files inside the separate `NClassicBattlegrounds` folder.
-5. Check that your two addon files are immediately inside that folder:
+1. **Back up** your existing `NaxxramasClassicBattlegrounds`, `N-ClassicBattlegrounds` or `NClassicBattlegrounds` folders in `Interface/AddOns`. Remove these existing versions after backing them up to avoid duplicate addons.
+2. Select **Code → Download ZIP** on this repository and extract it.
+3. Open the extracted **`N-ClassicBattlegrounds-main`** repository folder. **Inside it**, find the install-ready **`NClassicBattlegrounds`** folder.
+4. **Copy only that inner `NClassicBattlegrounds` folder** to `World of Warcraft/Interface/AddOns/`. Do not copy the outer repository folder.
+5. Check the final layout:
 
    ```text
    Interface/
@@ -37,9 +37,11 @@ The addon changes **what is shown in the client only**. For actual server-enforc
            └── NClassicBattlegrounds.lua
    ```
 
-6. Enable the addon at character selection, enter the game and type `/reload` if needed.
+6. Launch WoW 3.3.5a. Check the **AddOns** button at character selection for **N Classic Battlegrounds**, then use `/ncbg status` in game.
 
-**Important:** Only the new `NClassicBattlegrounds` folder should be active. Do not install both names together. Your addon folder must directly contain its matching `.toc` and `.lua` files. The GitHub repository is separately named `N-ClassicBattlegrounds`, but WoW must load the `NClassicBattlegrounds` addon folder and matching filenames.
+**Common mistake:** The GitHub repository is named `N-ClassicBattlegrounds` (with a hyphen), but the **installed addon folder MUST be named `NClassicBattlegrounds`** (without a hyphen), matching the `.toc` filename. Installing the outer ZIP/repository folder directly prevents the addon from appearing.
+
+**Important:** Only the new `NClassicBattlegrounds` folder should be active. Do not install both names together. Your addon folder must directly contain its matching `.toc` and `.lua` files. The repository now ships an install-ready inner `NClassicBattlegrounds/` folder; the outer `N-ClassicBattlegrounds-main` folder is **not** the WoW addon.
 
 The addon can be used to test the **interface alone** while the Naxxramas Core server feature is still disabled. Hiding a tab is **not** a security or matchmaking restriction.
 

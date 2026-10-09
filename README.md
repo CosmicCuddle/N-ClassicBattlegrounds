@@ -74,13 +74,13 @@ The independent [Naxxramas Core server module](https://github.com/CosmicCuddle/M
 
 ## Testing status
 
-**Version: 0.2.1-beta — not a verified stable release.**
+**Version: 1.0.0 — first public release.**
 
-- **Confirmed in game:** the Vanilla/TBC remote Battlegrounds tab hides correctly, the PvP panel remains, and the earlier overlapping message has been removed.
-- **Still needs testing:** Vanilla Arena frames, pre-WotLK Wintergrasp information, TBC stage-8 restoration of Arena frames, WotLK stage-13 restoration of the Battlegrounds tab and Wintergrasp, Battlemaster NPC presentation, and other addon compatibility.
+- **Reported working in game:** after correcting the addon directory, the addon loads and the user confirmed it works; the original remote Battlegrounds tab hide was separately confirmed. The PvP panel remains and the earlier overlapping message was removed.
+- **Further verification recommended:** actual progression transitions (Vanilla to TBC stage 8, TBC to WotLK stage 13), Wintergrasp display in each era, Battlemaster NPC presentation, and third-party addon compatibility. These are not being claimed as fully tested.
 - **Not yet tested:** companion server-side Battlemaster restriction (requires a future Naxxramas Core rebuild).
 
-Follow the [addon test checklist](docs/TESTING.md) before publishing a stable release.
+See the [addon test checklist](docs/TESTING.md) for recommended post-release regression checks and [v1.0.0 release notes](docs/RELEASE-v1.0.0.md) for details.
 
 ## Development and rollback
 

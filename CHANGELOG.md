@@ -2,6 +2,12 @@
 
 All changes to the **client addon** belong in this repository. Server-only Battlemaster queue enforcement is maintained separately in [Mod-Naxxramas-Core](https://github.com/CosmicCuddle/Mod-Naxxramas-Core).
 
+## Installation packaging correction — invisible addon folder
+
+- Fixed repository layout: the distributable `NClassicBattlegrounds.lua` and `NClassicBattlegrounds.toc` now live inside an install-ready `NClassicBattlegrounds/` folder.
+- GitHub repository and ZIP name include the hyphen (`N-ClassicBattlegrounds`), but the WoW addon folder must **not** contain the hyphen, matching its `.toc` file exactly.
+- No Lua functionality or progression rules changed during this packaging fix.
+
 ## 0.2.1-beta — shorter addon name (not yet tested in game)
 
 - Renamed addon folder, TOC, Lua file, in-game title and internal ADDON_LOADED identifier from `NaxxramasClassicBattlegrounds` to `NClassicBattlegrounds`.

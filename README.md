@@ -1,4 +1,4 @@
-# Naxxramas Classic Battlegrounds
+# N Classic Battlegrounds
 
 **WoW 3.3.5a addon** that makes the PvP interface reflect a character's era in [Individual Progression](https://github.com/ZhengPeiRu21/mod-individual-progression).
 
@@ -23,25 +23,31 @@ The addon changes **what is shown in the client only**. For actual server-enforc
 
 ## Installation
 
-1. **Back up** any existing `NaxxramasClassicBattlegrounds` addon folder.
+1. **Back up** your existing `NaxxramasClassicBattlegrounds` folder (and any previous `NClassicBattlegrounds` folder), then **remove the old `NaxxramasClassicBattlegrounds` folder from `Interface/AddOns`** so the two versions do not load simultaneously.
 2. On this repository, select **Code → Download ZIP** and extract it.
-3. Rename the extracted folder from `NaxxramasClassicBattlegrounds-main` to **`NaxxramasClassicBattlegrounds`**.
-4. Put that folder inside `World of Warcraft/Interface/AddOns/`.
+3. Inside `World of Warcraft/Interface/AddOns/`, create a folder named **`NClassicBattlegrounds`**.
+4. Copy the `NClassicBattlegrounds.lua` and `NClassicBattlegrounds.toc` files from the extracted ZIP into that folder. The GitHub repository ZIP may still be called `NaxxramasClassicBattlegrounds-main` until the repository itself is renamed.
 5. Check that your two addon files are immediately inside that folder:
 
    ```text
    Interface/
    └── AddOns/
-       └── NaxxramasClassicBattlegrounds/
-           ├── NaxxramasClassicBattlegrounds.toc
-           └── NaxxramasClassicBattlegrounds.lua
+       └── NClassicBattlegrounds/
+           ├── NClassicBattlegrounds.toc
+           └── NClassicBattlegrounds.lua
    ```
 
 6. Enable the addon at character selection, enter the game and type `/reload` if needed.
 
-**Important:** There must not be an extra nested `NaxxramasClassicBattlegrounds-main` directory between the addon folder and the `.toc` file.
+**Important:** Only the new `NClassicBattlegrounds` folder should be active. Do not install both names together. Your addon folder must directly contain its matching `.toc` and `.lua` files. This file rename does **not** rename the GitHub repository itself.
 
 The addon can be used to test the **interface alone** while the Naxxramas Core server feature is still disabled. Hiding a tab is **not** a security or matchmaking restriction.
+
+## Name change
+
+**New addon name:** `NClassicBattlegrounds`. **Former addon name:** `NaxxramasClassicBattlegrounds`.
+
+The **GitHub repository URL may still display the old name** until its owner renames it in GitHub Settings. That does not affect the client addon folder, which must use the new name.
 
 ## Commands
 
@@ -66,7 +72,7 @@ The independent [Naxxramas Core server module](https://github.com/CosmicCuddle/M
 
 ## Testing status
 
-**Version: 0.2.0-beta — not a verified stable release.**
+**Version: 0.2.1-beta — not a verified stable release.**
 
 - **Confirmed in game:** the Vanilla/TBC remote Battlegrounds tab hides correctly, the PvP panel remains, and the earlier overlapping message has been removed.
 - **Still needs testing:** Vanilla Arena frames, pre-WotLK Wintergrasp information, TBC stage-8 restoration of Arena frames, WotLK stage-13 restoration of the Battlegrounds tab and Wintergrasp, Battlemaster NPC presentation, and other addon compatibility.
@@ -78,6 +84,8 @@ Follow the [addon test checklist](docs/TESTING.md) before publishing a stable re
 
 This repository is the **canonical home of the addon**; new Lua and TOC updates should be made here first. The earlier copy kept inside Mod-Naxxramas-Core is an **unchanged backup** during this migration and should not be treated as the update target.
 
-To undo all client changes, use `/ncbg off` or disable/remove the addon folder. The SavedVariablesPerCharacter setting is preserved by the client; no character or server data is modified.
+To undo all client changes, use `/ncbg off` or disable/remove the `NClassicBattlegrounds` folder. No character or server data is modified.
+
+**Name migration:** the new addon saves its per-character on/off preference as `NClassicBGQueueSettings`. The old `NaxxramasClassicBGQueueSettings` value is not automatically carried over from the renamed addon; the new name defaults to **enabled**. You can use `/ncbg off` again if needed. Keep your old addon folder backed up for rollback.
 
 For history of changes, see [CHANGELOG.md](CHANGELOG.md).

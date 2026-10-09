@@ -2,7 +2,7 @@
 ## Title: N Classic Battlegrounds
 ## Notes: Expansion-aware PvP interface: Classic Battleground tab, Arena panels, Wintergrasp timer.
 ## Author: CosmicCuddle
-## Version: 0.2.0-beta
+## Version: 0.2.1-beta
 ## SavedVariablesPerCharacter: NClassicBGQueueSettings
 
 NClassicBattlegrounds.lua

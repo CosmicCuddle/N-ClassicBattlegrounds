@@ -14,7 +14,7 @@ First public release of **N Classic Battlegrounds**, a client-only WoW 3.3.5a ad
 
 ## Download and installation
 
-**Preferred download:** `dist/NClassicBattlegrounds-v1.0.0.zip` in this repository.
+**Preferred download:** [NClassicBattlegrounds-v1.0.0.zip](https://github.com/CosmicCuddle/N-ClassicBattlegrounds/raw/refs/heads/main/dist/NClassicBattlegrounds-v1.0.0.zip). The archive extracts directly into `Interface/AddOns/NClassicBattlegrounds/`.
 
 1. Back up your existing `Interface/AddOns/NClassicBattlegrounds/` folder.
 2. Remove old addon folders such as `NaxxramasClassicBattlegrounds` or `N-ClassicBattlegrounds`; never install two copies.

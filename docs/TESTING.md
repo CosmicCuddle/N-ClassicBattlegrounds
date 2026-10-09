@@ -1,4 +1,6 @@
-# In-game testing checklist (0.2.1-beta)
+# In-game regression checklist (v1.0.0)
+
+The user has confirmed the renamed, properly packaged addon loads and works, including the original Battleground tab fix. The full era-transition matrix below remains a recommended regression checklist, **not a claim that every item has passed**.
 
 No recompilation or server restart is required to check addon UI changes.
 

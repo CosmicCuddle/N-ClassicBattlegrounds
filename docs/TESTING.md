@@ -6,7 +6,7 @@ No recompilation or server restart is required to check addon UI changes.
 
 1. Back up the previous version of `Interface/AddOns/NClassicBattlegrounds/`.
 2. Remove the old `NaxxramasClassicBattlegrounds` directory from `Interface/AddOns` **after making a backup**; do not load both old and new addons together.
-3. Create `Interface/AddOns/NClassicBattlegrounds/` and copy `NClassicBattlegrounds.lua` and `NClassicBattlegrounds.toc` directly inside it.
+3. From the GitHub ZIP's outer `N-ClassicBattlegrounds-main` directory, copy **only the inner** `NClassicBattlegrounds/` folder to `Interface/AddOns/`. The installed folder **must not contain a hyphen**, otherwise WoW cannot find its `.toc` file.
 4. Start WoW 3.3.5a and use `/reload`.
 5. Use `/ncbg on` and `/ncbg status`.
 6. Allow about 75 seconds for completed progression quest IDs to refresh.

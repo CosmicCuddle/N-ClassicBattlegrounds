@@ -26,7 +26,7 @@ The addon changes **what is shown in the client only**. For actual server-enforc
 1. **Back up** your existing `NaxxramasClassicBattlegrounds` folder (and any previous `NClassicBattlegrounds` folder), then **remove the old `NaxxramasClassicBattlegrounds` folder from `Interface/AddOns`** so the two versions do not load simultaneously.
 2. On this repository, select **Code → Download ZIP** and extract it.
 3. Inside `World of Warcraft/Interface/AddOns/`, create a folder named **`NClassicBattlegrounds`**.
-4. Copy the `NClassicBattlegrounds.lua` and `NClassicBattlegrounds.toc` files from the extracted ZIP into that folder. The GitHub repository ZIP may still be called `NaxxramasClassicBattlegrounds-main` until the repository itself is renamed.
+4. Copy the `NClassicBattlegrounds.lua` and `NClassicBattlegrounds.toc` files from the extracted ZIP into that folder. The GitHub ZIP is now named `N-ClassicBattlegrounds-main`; install only the two addon files inside the separate `NClassicBattlegrounds` folder.
 5. Check that your two addon files are immediately inside that folder:
 
    ```text
@@ -39,7 +39,7 @@ The addon changes **what is shown in the client only**. For actual server-enforc
 
 6. Enable the addon at character selection, enter the game and type `/reload` if needed.
 
-**Important:** Only the new `NClassicBattlegrounds` folder should be active. Do not install both names together. Your addon folder must directly contain its matching `.toc` and `.lua` files. This file rename does **not** rename the GitHub repository itself.
+**Important:** Only the new `NClassicBattlegrounds` folder should be active. Do not install both names together. Your addon folder must directly contain its matching `.toc` and `.lua` files. The GitHub repository is separately named `N-ClassicBattlegrounds`, but WoW must load the `NClassicBattlegrounds` addon folder and matching filenames.
 
 The addon can be used to test the **interface alone** while the Naxxramas Core server feature is still disabled. Hiding a tab is **not** a security or matchmaking restriction.
 
@@ -47,7 +47,7 @@ The addon can be used to test the **interface alone** while the Naxxramas Core s
 
 **New addon name:** `NClassicBattlegrounds`. **Former addon name:** `NaxxramasClassicBattlegrounds`.
 
-The **GitHub repository URL may still display the old name** until its owner renames it in GitHub Settings. That does not affect the client addon folder, which must use the new name.
+**Current repository:** [CosmicCuddle/N-ClassicBattlegrounds](https://github.com/CosmicCuddle/N-ClassicBattlegrounds). The shorter GitHub repository name and the no-hyphen WoW addon folder are intentionally different.
 
 ## Commands
 

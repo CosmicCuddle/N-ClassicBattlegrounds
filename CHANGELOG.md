@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.0 — first standalone release (2026-10-09)
+
+- Officially versioned the standalone **N Classic Battlegrounds** addon for WotLK 3.3.5a.
+- Includes the confirmed Battlegrounds tab hiding fix for Vanilla/TBC, while keeping the Honor interface and Battlemaster queue controls.
+- Includes progression-dependent Arena panel visibility (Vanilla hidden; TBC stage 8+) and Wintergrasp visibility (WotLK stage 13+).
+- Includes the final `NClassicBattlegrounds/` folder structure matching the `.toc` file. Retains `/ncbg` commands.
+- Installation and baseline behaviour were reported working by the user.
+- **Verification note:** expansion transitions and all Battlemaster/Wintergrasp combinations have not been individually verified in-game. Server-side Battlemaster-only queue enforcement is separate, off by default, and still needs a rebuild/test.
+- No character/database/DBC/server modification is required to install or update this client addon.
+
+
 All changes to the **client addon** belong in this repository. Server-only Battlemaster queue enforcement is maintained separately in [Mod-Naxxramas-Core](https://github.com/CosmicCuddle/Mod-Naxxramas-Core).
 
 ## Installation packaging correction — invisible addon folder

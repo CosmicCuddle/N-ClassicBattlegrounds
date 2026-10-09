@@ -2,6 +2,14 @@
 
 All changes to the **client addon** belong in this repository. Server-only Battlemaster queue enforcement is maintained separately in [Mod-Naxxramas-Core](https://github.com/CosmicCuddle/Mod-Naxxramas-Core).
 
+## 0.2.1-beta — shorter addon name (not yet tested in game)
+
+- Renamed addon folder, TOC, Lua file, in-game title and internal ADDON_LOADED identifier from `NaxxramasClassicBattlegrounds` to `NClassicBattlegrounds`.
+- Shortened chat prefix to `N Classic BG`; existing `/ncbg` commands remain unchanged.
+- Per-character settings now use `NClassicBGQueueSettings` (new name defaults to enabled; prior preference does not auto-migrate).
+- Kept all stage 8/13 progression visuals identical and left server-side queue enforcement in Mod-Naxxramas-Core.
+- Back up then **remove the old addon folder** before installing the new one; never load both copies at once.
+
 ## 0.2.0-beta — in-game testing required
 
 - Added progression-aware Vanilla Arena UI: hide Arena points, 2v2/3v3/5v5 team panels and related controls until **TBC entry (stage 8)**.

@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: Naxxramas Classic Battlegrounds
+## Notes: Expansion-aware PvP interface: Classic Battleground tab, Arena panels, Wintergrasp timer.
+## Author: CosmicCuddle
+## Version: 0.2.0-beta
+## SavedVariablesPerCharacter: NaxxramasClassicBGQueueSettings
+
+NaxxramasClassicBattlegrounds.lua
